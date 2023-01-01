@@ -1,4 +1,7 @@
-<?php require 'header.php'; ?>
+<?php 
+$title = "Page d'accueil";
+require 'header.php'; 
+?>
 
   <div class="bg-light p-5 rounded">
     <h1>Navbar example</h1>
@@ -8,4 +11,3 @@
 
   <?php require 'footer.php'; ?>
 
-  
