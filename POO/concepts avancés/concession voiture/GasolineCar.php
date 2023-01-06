@@ -7,8 +7,14 @@ class GasolineCar extends Car
     public float $co2Emission; 
     public function __construct(float $price, string $brand, float $co2Emission)
     {
-        $this->price = $price; 
-        $this->brand = $brand;
+        parent::__construct($price, $brand);
         $this->co2Emission = $co2Emission;  
+    }
+
+    public function getCharacteristics(): array
+    {
+        $characteristics = parent::getCharacteristics();
+        $characteristics['co2Emission'] = $this->co2Emission;
+        return $characteristics; 
     }
 }

@@ -7,8 +7,13 @@ class ElectricCar extends Car
     public float $batteryAutonomy; 
     public function __construct(float $price, string $brand, float $batteryAutonomy)
     {
-        $this->price = $price; 
-        $this->brand = $brand;
+        parent::__construct($price, $brand);
         $this->batteryAutonomy = $batteryAutonomy;
+    }
+    public function getCharacteristics(): array
+    {
+        $characteristics = parent::getCharacteristics();
+        $characteristics['batteryAutonomy'] = $this->batteryAutonomy;
+        return $characteristics; 
     }
 }

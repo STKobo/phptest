@@ -10,4 +10,12 @@ class Car
         $this->price = $price;
         $this->brand = $brand; 
     }
+
+    public function getCharacteristics(): array
+    {
+        return [
+            'price' => $this->price, 
+            'brand' => $this->brand,
+        ];
+    }
 }
