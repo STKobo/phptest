@@ -10,4 +10,9 @@ class Seller extends User
         $this->surname = $surname; 
         $this->company = $company; 
     }
+
+    public function getDisplayedName(): string 
+    {
+        return $this->name.' '.$this->surname.' ('.$this->company.') ';
+    }
 }
