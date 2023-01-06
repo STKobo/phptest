@@ -1,4 +1,7 @@
-<?php require 'header.php' ?>
+<?php  
+$title = "Page d'accueil";
+require 'header.php' 
+?>
 
   <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
     <div class="col-md-6 px-0">
