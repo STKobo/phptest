@@ -10,3 +10,4 @@ $product->setName("Mon produit");
 echo $product->getName();
 
 var_dump($product);
+

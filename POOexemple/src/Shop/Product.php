@@ -4,10 +4,10 @@ namespace App\Shop;
 
 class Product
 {
-    private int $id;
-    private string $name; 
-    private float $price; 
-    private string $description; 
+    protected int $id;
+    protected string $name; 
+    protected float $price; 
+    protected string $description; 
 
     public function __construct(
         string $name, 
