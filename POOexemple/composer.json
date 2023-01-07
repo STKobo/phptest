@@ -1,0 +1,10 @@
+{
+    "name": "steph/po-oexemple",
+    "description": "poo composer",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
