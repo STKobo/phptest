@@ -12,5 +12,5 @@ echo $product->getName();
 
 var_dump($product);
 
-$productRect = new ProductRect("Téléviseur", 400);
+$productRect = new ProductRect("Téléviseur", 400, 200, 80);
 var_dump($productRect);

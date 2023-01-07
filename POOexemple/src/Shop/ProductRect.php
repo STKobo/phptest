@@ -7,6 +7,22 @@ class ProductRect extends Product
     private int $width; 
     private int $height;
 
+    public function __construct(
+        string $name, 
+        float $price, 
+        int $width, 
+        int $height, 
+        ?string $description = null
+    )  {
+        if ($description === null){
+            parent::__construct($name, $price);
+        } else {
+            parent::__construct($name, $price, $description);
+        }
+
+        $this->width = $width;
+        $this->height = $height; 
+    }
 
     public function getWidth()
     {
