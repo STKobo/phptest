@@ -2,4 +2,11 @@
 
 require_once "vendor/autoload.php";
 
-echo "Coucou"; 
+use App\Shop\Product; 
+
+$product = new Product();
+
+$product->setName("Mon produit");
+echo $product->getName();
+
+var_dump($product);
