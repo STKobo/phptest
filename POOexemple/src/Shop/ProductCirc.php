@@ -2,7 +2,7 @@
 
 namespace App\Shop; 
 
-final class ProductCirc extends Product 
+final class ProductCirc extends AbstractProduct 
 {
     private int $diameter; 
 

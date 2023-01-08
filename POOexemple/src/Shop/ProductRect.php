@@ -2,7 +2,7 @@
 
 namespace App\Shop; 
 
-final class ProductRect extends Product
+final class ProductRect extends AbstractProduct
 {
     private int $width; 
     private int $height;
