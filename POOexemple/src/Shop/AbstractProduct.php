@@ -20,6 +20,7 @@ abstract class AbstractProduct
     }
     
     abstract public function getSurface(): float; 
+    // toute classe qui prétend hériter de cette classe abstraite devra alors fournir une implémentation de la classe abstraite
 
     public function getName(): string
     {

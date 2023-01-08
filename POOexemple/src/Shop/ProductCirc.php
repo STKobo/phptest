@@ -16,6 +16,11 @@ final class ProductCirc extends AbstractProduct
         parent::__construct($name, $price, $description);
         $this->diameter = $diameter;
     }
+
+    public function getSurface(): float
+    {
+        return M_PI * (($this->diameter / 2) ** 2);
+    }
     
     public function getDiameter()
     {
