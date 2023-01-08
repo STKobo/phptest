@@ -2,6 +2,8 @@
 
 require_once "vendor/autoload.php";
 
+use App\IDisplayable;
+use App\Security\User;
 use App\Shop\AbstractProduct;
 use App\Shop\ProductCirc;
 use App\Shop\ProductRect;
@@ -35,3 +37,12 @@ function displayProduct(AbstractProduct $product)
 }
 
 listProducts([$productRect, $productCirc]);
+
+function display(IDisplayable $item)
+{
+    $item->display();
+}
+
+display($productCirc);
+display($productRect);
+display(new User()); 
