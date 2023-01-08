@@ -2,7 +2,7 @@
 
 namespace App\Shop;
 
-class Product
+abstract class Product
 {
     protected int $id;
     protected string $name; 
