@@ -2,7 +2,7 @@
 
 namespace App\Shop;
 
-abstract class Product
+abstract class AbstractProduct
 {
     protected int $id;
     protected string $name; 
@@ -19,6 +19,7 @@ abstract class Product
         $this->description = $description;
     }
     
+    abstract public function getSurface(): float; 
 
     public function getName(): string
     {
