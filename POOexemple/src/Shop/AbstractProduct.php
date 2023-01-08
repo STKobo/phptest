@@ -2,7 +2,9 @@
 
 namespace App\Shop;
 
-abstract class AbstractProduct
+use App\IDisplayable;
+
+abstract class AbstractProduct implements IDisplayable
 {
     protected int $id;
     protected string $name; 
@@ -21,6 +23,11 @@ abstract class AbstractProduct
     
     abstract public function getSurface(): float; 
     // toute classe qui prétend hériter de cette classe abstraite devra alors fournir une implémentation de la classe abstraite
+
+    public function display(): void
+    {
+        echo $this->getName(). ' - '.$this->getSurface()."<br />";
+    }
 
     public function getName(): string
     {

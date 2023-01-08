@@ -25,8 +25,13 @@ var_dump($productCirc->getSurface());
 function listProducts(array $product)
 {
     foreach ($product as $product) {
-        echo $product->getName(). ' - '.$product->getSurface()."<br />";
+        $product->display();
     }
+}
+
+function displayProduct(AbstractProduct $product)
+{
+    echo $product->getName(). ' - '. $product->getSurface(). "<br />";
 }
 
 listProducts([$productRect, $productCirc]);
