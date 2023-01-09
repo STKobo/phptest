@@ -12,4 +12,13 @@ class Company
         $this->type = $type;
         $this->domain = $domain;
     }
+
+    public function getTitle(): string 
+    {
+        return $this->name;
+    }
+    public function getDescription(): string 
+    {
+        return $this->name.' est une '.$this->type.' spécialisée dans '.$this->domain;
+    }
 }
