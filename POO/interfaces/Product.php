@@ -1,4 +1,5 @@
 <?php 
+require_once 'Tooltipable.php';
 
 class Product 
 {
@@ -9,5 +10,15 @@ class Product
     {
         $this->title = $title;
         $this->description = $description;
+    }
+
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    public function getDescription(): string
+    {
+        return $this->description;
     }
 }
