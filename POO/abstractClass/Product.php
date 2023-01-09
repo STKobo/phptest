@@ -1,6 +1,6 @@
 <?php 
 
-class Product 
+abstract class Product 
 {
     public float $price; 
     public string $name; 
@@ -9,5 +9,5 @@ class Product
         $this->price = $price;
         $this->name = $name; 
     }
-    
+
 }
