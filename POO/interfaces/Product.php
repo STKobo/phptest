@@ -1,7 +1,7 @@
 <?php 
 require_once 'Tooltipable.php';
 
-class Product 
+class Product implements Tooltipable
 {
     public string $title;
     public string $description;
