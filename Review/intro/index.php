@@ -7,6 +7,16 @@
     <title>Tuto</title>
 </head>
 <body>
-    
+    <h1><?php echo 'Hello ' ?></h1>
+    <?php 
+    $age = 18; 
+    echo "Il a $age ans";
+    ?>
+    <br>
+    <?php
+    echo "Elle a aussi $age ans.";
+    $numero = 1;
+    echo "<br />". $numero;
+    ?>
 </body>
 </html>
