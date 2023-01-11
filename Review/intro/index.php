@@ -17,6 +17,8 @@
     echo "Elle a aussi $age ans.";
     $numero = 1;
     echo "<br />". $numero;
+    $numero += 3 ;
+    echo "<br />". $numero ; 
     ?>
 </body>
 </html>
