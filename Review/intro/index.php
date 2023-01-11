@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuto</title>
 </head>
+
 <body>
     <h1><?php echo 'Hello ' ?></h1>
     <?php 
+    const SOFTWARE_VERSION = "1.0.0";
     $age = 18; 
     echo "Il a $age ans";
     ?>
