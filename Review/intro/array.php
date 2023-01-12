@@ -22,3 +22,15 @@ var_dump($array);
 for($d = 1; $d < 11; $d++){
     echo $d . " - ";
 }
+
+echo "<br />";
+
+foreach($array as $element){
+    echo $element . " - ";
+}
+
+$d = 1;
+while($d < 11){ 
+    echo $d . " - ";
+    $d++; 
+}
