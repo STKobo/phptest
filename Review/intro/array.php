@@ -18,3 +18,7 @@ var_dump($monTableau);
 
 $array = ["Konichiwa", ...$array];
 var_dump($array);
+
+for($d = 1; $d < 11; $d++){
+    echo $d . " - ";
+}
