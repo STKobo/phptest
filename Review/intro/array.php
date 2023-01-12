@@ -36,5 +36,10 @@ while($d < 11){
 }
 
 for($d = 0; $d < count($array); $d++){
-    echo $array[$d];
+    if(array_key_exists($d, $array)){
+        echo $array[$d]." - ";
+    }else{
+        echo " :P - ";
+    }
+    echo $array[$d] . " - ";
 }
