@@ -34,3 +34,7 @@ while($d < 11){
     echo $d . " - ";
     $d++; 
 }
+
+for($d = 0; $d < count($array); $d++){
+    echo $array[$d];
+}
