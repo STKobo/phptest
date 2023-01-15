@@ -50,19 +50,13 @@ $users = [
 <body>
 
     <div class="container">
+        <h1>Nombre de personnes : <?php echo count($users); ?> </h1>
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <?php 
-            foreach($users as $user){ ?>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <?php echo $user['name']. " - ". $user['age'] ; ?> 
-                    </h5>
-                    <p class="card-text"><?php echo $user['description']; ?></p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <?php }?>
+            //for($i = 0; $i < count($users); $i++) {}
+            foreach($users as $user){ 
+            include 'user_card.php'; 
+             }?>
         </div>
     </div>
 </body>
