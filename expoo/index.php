@@ -6,10 +6,21 @@ class User
     private string $name; 
     private int $age; 
     private string $description; 
+    private bool $active;
 
     public function __construct(int $id)
     {
         $this->id = $id ; 
+    }
+
+    /**
+     * Returns true if user's age is over fixed legal age
+     *
+     * @return boolean
+     */
+    public function hasLegalAge(): bool
+    {
+        return $this->age >= 18;
     }
 
     public function getId(): int
@@ -57,6 +68,17 @@ class User
 
         return $this;
     }
+
+    public function getActive(): bool
+    {
+        return $this->active; 
+    }
+
+    public function setActive(bool $active): self
+    {
+        $this->active = $active;
+        return $this;
+    }
 }
 
 $user = new User(123);
@@ -64,7 +86,13 @@ $user = new User(123);
 var_dump($user);
 
 echo $user->getId();
-$user->setName('Gad');
+$user->setName('Gad')
+    ->setAge(59)
+    ->setDescription('description de Gad')
+    ->setActive(true);
+
 echo $user->getName();
 
 $admin = new User(1);
+$admin->setAge(32);
+echo $admin->hasLegalAge() ? "L'admin est autorisé " : " non autorisé "; 
