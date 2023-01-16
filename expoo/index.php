@@ -2,6 +2,8 @@
 
 class User 
 {
+    private const LEGAL_AGE = 18; 
+
     private int $id;
     private string $name; 
     private int $age; 
@@ -20,7 +22,7 @@ class User
      */
     public function hasLegalAge(): bool
     {
-        return $this->age >= 18;
+        return $this->age >= self::LEGAL_AGE;
     }
 
     public function getId(): int
