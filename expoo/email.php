@@ -4,6 +4,12 @@ class Email
 {
     private string $email; 
 
+    /**
+     * Creates a new instance of Email Class
+     *
+     * @param string $email Plain text email
+     * @throws InvalidArgumentException if Email is invalid
+     */
     public function __construct(string $email)
     {
         $this->email = $email;
