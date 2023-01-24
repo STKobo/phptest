@@ -3,7 +3,7 @@ require_once 'ProduitRect.php';
 require_once 'ProduitCirc.php';
 
 $produitRect = new ProduitRect("televiseur", 400, 150, 120);
-$produitCirc = new ProduitCirc("Ballon", 25);
+$produitCirc = new ProduitCirc(30, "Ballon", 25);
 
 echo $produitRect->getName();
 

@@ -1,9 +1,9 @@
 <?php 
 
-Class Produit 
+abstract class Produit 
 {
-    private string $name;
-    private float $price;
+    protected string $name;
+    protected float $price;
 
     public function __construct(string $name, float $price)
     {
